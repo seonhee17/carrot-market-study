@@ -23,6 +23,14 @@ required 필수요구값
 
 peer 형제 이화면에서 input 과 button은 형제이다.
 peer-invalid:bg-red-100" 형제가 유효하지 않다면 ,
+
+
+
+outline-none 아래 input과 button이 같은 속성을 사용하고 있을경우
+지우고 *:outline-none 처리를 두객체를 감싸고 있는 div에 준다면,
+자식객체에 모두 적용된다.
+
+has-[]: 해당컨테이너에서 특정조건을 만족하는 자식을 확인할수 있음.
 */
 
 export default function Home(){
@@ -36,9 +44,10 @@ export default function Home(){
                     h-screen flex items-center justify-center p-5">
           <div  className="bg-white  shadow-lg p-5
                           rounded-3xl w-full max-w-screen-sm flex flex-col
-                          md:flex-row gap-2">
+                          md:flex-row gap-2 *:outline-none
+                          has-[.peer]:bg-green-100">
             <input  className="w-full rounded-full h-10 
-                              bg-gray-200 pl-5 outline-none ring
+                              bg-gray-200 pl-5  ring
                               ring-transparent focus:ring-orange-500 
                               focus:ring-offset-2 transition-shadow
                               placeholder:drop-shadow invalid:focus:ring-red-600 peer
@@ -50,13 +59,12 @@ export default function Home(){
               Email is required
             </span>
             <button className="bg-black text-white py-2
-            rounded-full active:scale-90 mt-2
-            transition-transform font-medium outline-none
-            md:px-10 bg-gradient-to-tr
-            from-cyan-500 via-yellow-400 to-purple-400
-            peer-invalid:bg-red-100"
-            >
-            Search
+                                rounded-full active:scale-90 mt-2
+                                transition-transform font-medium
+                                md:px-10 bg-gradient-to-tr
+                                from-cyan-500 via-yellow-400 to-purple-400
+                                peer-invalid:bg-red-100"
+                                >Search
             </button>
           </div>
       </main>
