@@ -58,6 +58,13 @@ container 객체에 마우스를 올려두면 자식의 상태를 변화시킬�
 
 group-hover: 
 group-focus-within:block
+
+
+#3.10 JIT(Just in time compiler)
+TailwindCss의 작동박식에 대해 알아본다
+tailwind.config.js class name 에 대해 생성을 시도한다.
+
+
 */
 
 export default function Home(){
@@ -84,8 +91,8 @@ export default function Home(){
                                         rounded-full animate-spin">
                           <span>⌛️</span>
                           {/* 가장자리가 터지는 효과 원두개가 있고 나머지 하나를 animate-ping처리 해주면됨 */}
-                          <div className="size-6 bg-red-500 rounded-full absolute
-                          animate-ping"></div>
+                          <div className="size-6 bg-red-500 rounded-sexy-name absolute
+                          animate-ping m-tomato"></div>
                         </div>
                       </div>
                     )}

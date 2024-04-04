@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderRadius:{
+        "sexy-name": "11.11px",
+      },
+      margin:{
+        "tomato": "120px"
+      }
     },
   },
   plugins: [],
