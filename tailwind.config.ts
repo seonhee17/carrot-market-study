@@ -18,7 +18,14 @@ const config: Config = {
       },
       margin:{
         "tomato": "120px"
-      }
+      },
+      fontFamily: {
+        Montserrat: ['Montserrat'],
+      },
+      colors: {
+        secondYellow: '#ffbd12',
+        tomatoColor: '#f85a2b',
+      },
     },
   },
   plugins: [],
